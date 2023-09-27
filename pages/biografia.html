@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="inio asano, biografia, mangaka japones, japon, mangas">
+    <meta name="description" content="biografia del mangaka japones inio asano">
+    <meta name="author" content="Luis Romero">
+    <meta name="copyrigth" content="Inio Asano">
+    <title>InioAsano-Biografia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body-bio">
+    <header>
+        <div class="navbar">
+            <div>
+                <img class="logo" src="../assets/img/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Biografia</a></li>
+                <li><a href="../pages/obras.html">Obras</a></li>
+                <li><a href="../pages/entrevista.html">Entrevista</a></li>
+            </ul>
+            <a href="../pages/contacto.html" class="action-btn">Contactanos</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Biografia</a></li>
+            <li><a href="../pages/obras.html">Obras</a></li>
+            <li><a href="../pages/entrevista.html">Entrevista</a></li>
+            <li><a href="../pages/contacto.html" class="action-btn">Contactanos</a></li>
+        </div>
+    </header>
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnicon = document.querySelector('.toggle-btn i')
+        const dropdownmenu = document.querySelector('.dropdown-menu')
+
+        togglebtn.onclick = function(){
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+            togglebtnicon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <h1 class="titulo-biografia">BIOGRAFIA INIO ASANO</h1>
+    <div class="card mb-3" style="max-width: 1000px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="../assets/img/asano3.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Inio Asano</h5>
+                    <p class="card-text">Inio Asano (Ibaraki, Japón, 1980) se ha convertido en los últimos años en uno de los artistas más reconocidos del manga, tanto por su peculiar sensibilidad como por la originalidad de su trabajo.</br>
+                        Según ha comentado en entrevistas, empezó a dibujar fanfic de los cómics más populares del momento en el instituto. Animado por sus compañeros, envió muestras de su trabajo a la revista Big Comic Spirits, toda una institución en Japón, en la cual fue admitido con sólo diecisiete años. Allí, tuvo que pasar unos años de aprendizaje, trabajando como asistente del mangaka Shin Takahashi.</br> 
+                        Hacia el 2000, empezó a publicar historias cortas, que serían recopiladas en dos tomos bajo el título de What a wonderful world, en las que refleja la desorientación de los jóvenes japoneses de su generación, víctimas de la crisis económica, obligados a seguir viviendo con sus padres y a ocupar empleos precarios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="../index.html">Inicio</a></li>
+                <li class="list-inline-item"><a href="#">Servicios</a></li>
+                <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                <li class="list-inline-item"><a href="#">Terminos</a></li>
+                <li class="list-inline-item"><a href="#">Politicas de privacidad</a></li>
+            </ul>
+            <p class="copyright">Saudade_rn © 2023</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

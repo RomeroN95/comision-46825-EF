@@ -1,0 +1,74 @@
+:root {
+    --clr-gray: #37474f;
+    --clr-gray-light: #b0bec5;
+}
+.titulo-obras{
+    @extend .titulo-entrevista;
+}
+.main-obras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+.container-obras {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: #EFE1D1;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+}
+.banner-img-nijigahara {
+    position: absolute;
+    background-image: url(../assets/img/niji2.jpg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-img-orilla {
+    position: absolute;
+    background-image: url(../assets/img/orilla2.jpg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-img-punpun {
+    position: absolute;
+    background-image: url(../assets/img/punpun2.jpeg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-img-solanin {
+    position: absolute;
+    background-image: url(../assets/img/solanin2.png);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-img {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+}
+.nombre.obra {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #331D2C;
+}
+.descripcion-obra {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: #331D2C;
+}

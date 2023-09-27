@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="inio asano, mangaka, mangaka japones, japon, mangas">
+    <meta name="description" content="Inicio sobre inio asano">
+    <meta name="author" content="Luis Romero">
+    <meta name="copyrigth" content="Inio Asano">
+    <title>InioAsano-inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div>
+                <img class="logo" src="./assets/img/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/biografia.html">Biografia</a></li>
+                <li><a href="./pages/obras.html">Obras</a></li>
+                <li><a href="./pages/entrevista.html">Entrevista</a></li>
+            </ul>
+            <a href="./pages/contacto.html" class="action-btn">Contactanos</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./pages/biografia.html">Biografia</a></li>
+            <li><a href="./pages/obras.html">Obras</a></li>
+            <li><a href="./pages/entrevista.html">Entrevista</a></li>
+            <li><a href="./pages/contacto.html" class="action-btn">Contactanos</a></li>
+        </div>
+    </header>
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnicon = document.querySelector('.toggle-btn i')
+        const dropdownmenu = document.querySelector('.dropdown-menu')
+
+        togglebtn.onclick = function(){
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+            togglebtnicon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <main class="main-index">
+        <section class="banner">
+            <div>
+                <h1 class="texto1">INIO ASANO </h1>
+                <P class="texto2">MANGAKA</P>
+            </div>
+        </section>
+        
+    </main>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Inicio</a></li>
+                <li class="list-inline-item"><a href="#">Servicios</a></li>
+                <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                <li class="list-inline-item"><a href="#">Terminos</a></li>
+                <li class="list-inline-item"><a href="#">Politicas de privacidad</a></li>
+            </ul>
+            <p class="copyright">Saudade_rn © 2023</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

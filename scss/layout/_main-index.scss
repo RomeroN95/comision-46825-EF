@@ -1,0 +1,25 @@
+.main-index{
+    .banner{
+        @include flex(none,none,center,center);
+        background-image: url(../assets/img/fondo1.jpg);
+        width: 100%;
+        height: 43.75rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        div{
+            h1{
+                @include text(5.625rem,none,none,times);
+                color: $color-background;
+                -webkit-text-stroke: 2px $color-header;
+            }
+        }
+        div{
+            p{
+                @include text(3.125rem,none,none,times);
+                color: $color-header;
+                -webkit-text-stroke: 1px $color-background;
+            }
+        }
+    }
+}

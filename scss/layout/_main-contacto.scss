@@ -1,0 +1,19 @@
+.formulario-contacto{
+    h1{
+        @extend .titulo-entrevista;
+    }
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+    .mb-3{
+        margin: auto;
+        width: 90%;
+        max-width: 400%;
+        padding: 4.5em 3em;
+    }
+    .col-auto{
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+}

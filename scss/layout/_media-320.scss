@@ -1,0 +1,14 @@
+@media (max-width:360px) {
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+    }
+    .imagen{
+        width: 14.375rem;
+        height: 21.875rem;
+        align-items: center;        
+    }
+    .main-biografia{
+        flex-direction: column;
+    }
+}

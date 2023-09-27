@@ -1,0 +1,14 @@
+
+.titulo-biografia{
+    @extend .titulo-entrevista;
+}
+.col-md-8{
+    background: $color-background;
+}
+.col-md-4{
+    background: $color-background;
+}
+.card-text{
+    text-align: justify;
+}
+

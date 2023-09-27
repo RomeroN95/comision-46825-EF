@@ -1,0 +1,14 @@
+@mixin flex($direction,$wrap,$justify,$align){ 
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin text($fsize,$talign,$tdecoration,$ffamily){ 
+    font-size: $fsize;
+    text-align: $talign;
+    text-decoration: $tdecoration;
+    font-family: $ffamily;
+}
